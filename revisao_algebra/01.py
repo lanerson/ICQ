@@ -1,6 +1,5 @@
-f = lambda x: x**4+2*x**2+1
-# basta ver que a função tem duas raízes duplas complexas
-print(f(1j))        # 0
-print(f(1j*1j*1j))  # 0
+from sympy import symbols, Eq, solve
 
-
+x = symbols('x')
+eq = Eq(x**4+2*x**2+1,0)
+print(solve(eq,x))
