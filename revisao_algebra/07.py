@@ -1,0 +1,10 @@
+c1 = complex(input("digite um complexo [ex: 1+1j]: "))
+c2 = complex(input("digite outro complexo [ex: 1-3j]: "))
+
+print("conjugado da soma = soma dos conjugados")
+print(f"conjugado da soma = {(c1+c2).conjugate()}")
+print(f"soma dos conjugados = {c1.conjugate()+c2.conjugate()}")
+print("\n")
+print("conjugado do produto = produto dos conjugados")
+print(f"conjugado do produto = {(c1*c2).conjugate()}")
+print(f"produto dos conjugados = {c1.conjugate()*c2.conjugate()}")
